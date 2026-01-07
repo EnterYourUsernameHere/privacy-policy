@@ -1,6 +1,6 @@
 # Privacy Policy for Beer Trekker – Australia
 
-Beer Trekker – Australia ("the App") is developed by YOUR NAME OR DEV NAME.
+Beer Trekker – Australia ("the App") is developed by Barry Hart.
 
 This Privacy Policy explains how information is collected, used, and protected when you use the Beer Trekker – Australia app.
 
@@ -24,4 +24,4 @@ This Privacy Policy may be updated from time to time. Any changes will be posted
 ## Contact
 If you have any questions about this Privacy Policy, please contact:
 
-your@email.com
+barry@barry-hart.com

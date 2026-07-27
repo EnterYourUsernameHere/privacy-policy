@@ -28,6 +28,13 @@
     p, li { font-size: 1rem; }
     ul { padding-left: 24px; }
     .meta { margin: 0 0 28px; color: #52616b; }
+    .security {
+      margin: 20px 0;
+      padding: 18px;
+      border-left: 4px solid #18794e;
+      background: #f1f8f5;
+    }
+    .security h2 { margin-top: 0; }
     a { color: #075e9e; }
     footer { margin-top: 36px; color: #52616b; }
     @media (max-width: 600px) {
@@ -38,50 +45,67 @@
 <body>
   <main>
     <h1>V-Monitor Privacy Policy</h1>
-    <p class="meta"><strong>Effective date:</strong> 26 July 2026</p>
+    <p class="meta"><strong>Effective date:</strong> 27 July 2026</p>
 
-    <p>V-Monitor is an Android application published by BigBaz. It allows users to connect to an existing Victron VRM account and view information from their Victron monitoring system. This policy explains how V-Monitor handles information.</p>
+    <p>V-Monitor is an Android application published by BigBaz. It allows users to connect to an existing Victron VRM account and view information from their Victron monitoring system. This policy clearly explains what personal and sensitive data V-Monitor handles, why it is needed, how it is protected, who receives it, and how users can remove it.</p>
 
-    <h2>Information handled by V-Monitor</h2>
+    <h2>Data handled by V-Monitor</h2>
     <p>Depending on the features a user chooses to use, V-Monitor may handle:</p>
     <ul>
-      <li>A Victron VRM email address, user ID, installation ID and authentication credentials entered by the user.</li>
-      <li>Approximate and precise location when location-based map or weather features are enabled.</li>
-      <li>Google Play purchase status used to unlock and restore purchased app features.</li>
+      <li><strong>Personal information:</strong> the Victron VRM email address entered by the user.</li>
+      <li><strong>User identifiers and credentials:</strong> Victron VRM user ID, installation ID and API authentication token entered by the user.</li>
+      <li><strong>Location:</strong> approximate and precise device location when the user grants Android location permission and uses location-based map or weather features.</li>
+      <li><strong>Purchase history:</strong> Google Play purchase and entitlement status used to unlock and restore purchased app features. V-Monitor does not receive payment-card or bank-account details.</li>
     </ul>
 
-    <h2>How information is used</h2>
-    <p>This information is used only to authenticate with Victron VRM, retrieve and display Victron monitoring data, provide location-based map and weather features, and process or restore purchases made through Google Play.</p>
-    <p>V-Monitor does not use personal information for advertising or marketing and does not sell personal information.</p>
+    <h2>Purposes of data handling</h2>
+    <p>V-Monitor uses this data only to authenticate with Victron VRM, retrieve and display the user's Victron monitoring data, provide requested location-based map and weather information, and process or restore purchases made through Google Play.</p>
+    <p>V-Monitor does not use personal or sensitive data for advertising, marketing, profiling or unrelated analytics. The developer does not sell or rent user data.</p>
 
-    <h2>Third-party services</h2>
-    <p>To provide its features, V-Monitor may transmit relevant information to:</p>
+    <div class="security">
+      <h2>Secure data handling procedures</h2>
+      <ul>
+        <li>Victron email addresses, user IDs, installation IDs and API tokens are stored only in Android app-private storage. Other apps cannot access this storage through normal Android operation.</li>
+        <li>The files containing Victron credentials and Google Play entitlement state are explicitly excluded from Android cloud backup and device-to-device transfer.</li>
+        <li>Credentials are used only for direct authentication with Victron services. They are not sent to a server operated by the V-Monitor developer and are not included in developer analytics.</li>
+        <li>Personal and sensitive data sent off the device is encrypted in transit using HTTPS, TLS or SSL. V-Monitor does not intentionally transmit credentials over an unencrypted connection.</li>
+        <li>Location is accessed only after Android permission is granted. It is sent only when needed to provide enabled map or weather functionality and is not retained on a developer-operated server.</li>
+        <li>Purchase processing is handled through the official Google Play Billing service. V-Monitor retains only the entitlement needed to provide or restore the purchased feature and does not receive the user's payment method details.</li>
+        <li>The developer does not provide employees or other people with routine access to user credentials or location data because V-Monitor does not operate a backend database containing that information.</li>
+        <li>Security-related app updates will be issued when necessary. If the developer becomes aware of a data incident affecting users, the incident will be investigated and affected users or authorities will be notified when required by applicable law.</li>
+      </ul>
+      <p>No electronic storage or transmission method can be guaranteed to be completely secure, but V-Monitor applies the safeguards above to minimize access, disclosure and retention.</p>
+    </div>
+
+    <h2>Third-party services and sharing</h2>
+    <p>V-Monitor shares only the data necessary to provide the feature requested by the user:</p>
     <ul>
-      <li>Victron Energy services for account authentication and monitoring data.</li>
-      <li>Weather services including wttr.in, Open-Meteo and MET Norway for location-based weather information.</li>
-      <li>Google Play Billing for purchases and entitlement restoration.</li>
+      <li><strong>Victron Energy:</strong> email address, identifiers and authentication token for account authentication and retrieval of monitoring data.</li>
+      <li><strong>Weather providers:</strong> location coordinates for requested local weather information. Providers may include wttr.in, Open-Meteo and MET Norway.</li>
+      <li><strong>Google Play Billing:</strong> purchase requests and purchase status for payment processing, entitlement verification and restoration.</li>
     </ul>
-    <p>These third-party services process information according to their own privacy policies. The V-Monitor developer does not receive users' payment-card information from Google Play.</p>
+    <p>These providers process information under their own privacy and retention policies. V-Monitor does not share user data with advertisers or data brokers.</p>
 
     <h2>Storage and retention</h2>
-    <p>Victron credentials and app preferences are stored locally on the user's device until cleared in V-Monitor or removed by uninstalling the app. Purchase entitlement may also be retained locally so purchased features remain available.</p>
-    <p>Third-party providers may retain information according to their own policies. Google Play retains purchase records according to Google's policies.</p>
+    <p>Victron credentials and app preferences remain in app-private storage on the user's device until the user clears them, clears the app's storage, or uninstalls V-Monitor. Local purchase entitlement remains while needed to provide the purchased feature and may be refreshed from Google Play.</p>
+    <p>The V-Monitor developer does not retain copies of Victron credentials, location history or purchase records on a developer-operated server. Victron, weather providers and Google may retain information according to their own policies.</p>
 
-    <h2>User choices and deletion</h2>
-    <p>Location permission can be denied or withdrawn through Android settings. Users can clear saved Victron details from V-Monitor's settings and can remove locally stored app data through Android settings or by uninstalling V-Monitor.</p>
-    <p>V-Monitor does not create or manage Victron accounts. Requests to delete a Victron account or information held by Victron must be made through Victron VRM.</p>
-
-    <h2>Security</h2>
-    <p>User data transmitted by V-Monitor is protected in transit using HTTPS, TLS or SSL connections. No electronic storage or transmission method can be guaranteed to be completely secure.</p>
+    <h2>User choices, access and deletion</h2>
+    <ul>
+      <li>Location permission can be denied or withdrawn at any time through Android settings.</li>
+      <li>Saved Victron details can be removed using the clear-saved-details control in V-Monitor settings.</li>
+      <li>All locally stored V-Monitor data can be deleted through Android's app-storage settings or by uninstalling the app.</li>
+    </ul>
+    <p>V-Monitor does not create or manage Victron accounts. Requests to access or delete a Victron account or information retained by Victron must be made through Victron VRM. Google Play purchase records are managed through the user's Google Play account.</p>
 
     <h2>Children's privacy</h2>
     <p>V-Monitor is not directed to children and does not knowingly collect personal information from children.</p>
 
     <h2>Changes to this policy</h2>
-    <p>This policy may be updated when V-Monitor's features or data practices change. The effective date at the top of this page will identify the latest revision.</p>
+    <p>This policy may be updated when V-Monitor's features, security safeguards or data practices change. The effective date at the top of this page identifies the latest revision.</p>
 
     <h2>Contact</h2>
-    <p>Questions about this policy can be sent to <a href="mailto:Barry@barry-hart.com">Barry@barry-hart.com</a>.</p>
+    <p>Questions, privacy concerns or security reports can be sent to <a href="mailto:Barry@barry-hart.com">Barry@barry-hart.com</a>.</p>
 
     <footer>
       <p>V-Monitor is published on Google Play by BigBaz.</p>
